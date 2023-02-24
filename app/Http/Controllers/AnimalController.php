@@ -13,4 +13,5 @@ class AnimalController extends Controller
 
         return view('animal.animal-profile', compact('animal'));
     }
+
 }
