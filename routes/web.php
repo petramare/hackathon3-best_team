@@ -21,6 +21,6 @@ Route::get('/', [ClinicController::class, 'list'])->name('homepage.list');
 
 Route::get('/search', [ClinicController::class, 'search'])->name('search');
 
-Route::get('/{animalId}/showAnimal', [AnimalController::class, 'showAnimal'])->name('showAnimal');
+Route::get('/{animalId}/showAnimal', [AnimalController::class, 'showAnimal'])->name('animal.showAnimal');
 
 Route::get('/{ownerId}/showOwner', [OwnerController::class, 'showOwner'])->name('owner.showOwner');
