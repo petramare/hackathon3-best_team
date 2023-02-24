@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Owner;
 use Illuminate\Http\Request;
 use App\Models\Animal;
-use App\Models\Owner;
 
 class ClinicController extends Controller
 {
