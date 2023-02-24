@@ -20,14 +20,19 @@ class ClinicController extends Controller
     
     public function search(Request $request) 
     {
-        $query = $request->input('q');
+        $input = $request->query('q');
+        // dd($input);
+        if ($input === '' || $input === null){
+            $resultAnimals = [];
+            $resultOwners = [];
+        } else {
 
-        $resultAnimal = Animal::where('name', 'like', '%'.$query.'%')->get();
+            $resultAnimals = Animal::where('name', 'like', $input.'%')->get();
 
-        $resultOwner = Owner::where('surname', 'like', '%'.$query.'%')->get();
+            $resultOwners = Owner::where('surname', 'like', $input.'%')->get();
+        }
 
-        $results = $resultAnimal->merge($resultOwner);
-
-        return view('search', compact('results'));
+        return view('search', compact('resultAnimals', 'resultOwners'));
+        
     }
 }
