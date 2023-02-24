@@ -6,4 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>St. Hector's Veterinary Clinic</title>
 </head>
+<header>
+    <!--NAV BAR-->
+    <div class="navigation">
+      <ul class="navigation__bar">
+        <li class="navigation__bar_links"><a href="home.html">Home</a></li>
+        <li class="navigation__bar_links"><a href="about.html">About</a></li>
+        <li class="navigation__bar_links">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </header>
 <body>
