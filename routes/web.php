@@ -3,6 +3,7 @@
 use App\Http\Controllers\ClinicController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OwnerController;
+use App\Http\Controllers\AnimalController;
 
 
 /*
@@ -19,5 +20,7 @@ use App\Http\Controllers\OwnerController;
 Route::get('/', [ClinicController::class, 'list'])->name('homepage.list');
 
 Route::get('/search', [ClinicController::class, 'search'])->name('search');
+
+Route::get('/{animalId}/showAnimal', [AnimalController::class, 'showAnimal'])->name('animal.showAnimal');
 
 Route::get('/{ownerId}/showOwner', [OwnerController::class, 'showOwner'])->name('owner.showOwner');
