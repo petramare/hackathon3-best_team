@@ -14,25 +14,31 @@
         <nav class="navbar fixed-top navbar-expand-sm bg-body-secondary px-3">
             
             <div class="container-fluid">
-                <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">Contact</a>
-                </li>
-                </ul>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+            
+
+                <form class="d-flex w-50" role="search" action="/search" method="GET">
+                    <input class="form-control me-3" type="search" name="q" placeholder="Search..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
-
-            <form class="d-flex w-50" role="search" action="/search" method="GET">
-                <input class="form-control me-3" type="search" name="q" placeholder="Search..." aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-
         </nav>
   </header>
 
-  <main class="px-3">
+  <main class="px-3 pt-3 mt-5">
