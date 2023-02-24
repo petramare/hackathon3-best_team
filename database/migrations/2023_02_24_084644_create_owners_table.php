@@ -14,7 +14,8 @@ return new class extends Migration
         Schema::create('owners', function (Blueprint $table) {
             $table->bigIncrements('id');                         // add column 'id' that will be AI PK
             $table->string('first_name')->nullable();                           // create a string column 'first_name'
-            $table->string('surname')->nullable();                           // create a string column 'surname'
+            $table->string('surname')->nullable();  
+            $table->string('email')->nullable();                          // create a string column 'surname'
             $table->string('phone')->nullable();                // create a string column 'phone'
             $table->text('address')->nullable();                       // create a text column 'address'
             $table->nullableTimestamps(); 
