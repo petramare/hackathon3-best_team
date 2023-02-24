@@ -4,7 +4,7 @@
     @if (count($resultAnimals)>0)
     <ul>
         @foreach ($resultAnimals as $animal)
-            <li>{{ $animal->name }}  <br> owner: {{ $animal->owner->first_name }} {{ $animal->owner->surname }}</li>
+            <li><a href="{{route('animal.showAnimal', $animal->id)}}">{{ $animal->name }}</a> <br> owner: {{ $animal->owner->first_name }} {{ $animal->owner->surname }}</li>
         @endforeach
     </ul>
     @else <p>No animals found</p>
