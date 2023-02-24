@@ -9,13 +9,20 @@
 <header>
     <!--NAV BAR-->
     <div class="navigation">
-      <ul class="navigation__bar">
-        <li class="navigation__bar_links"><a href="home.html">Home</a></li>
-        <li class="navigation__bar_links"><a href="about.html">About</a></li>
-        <li class="navigation__bar_links">
-          <a href="contact.html">Contact</a>
-        </li>
-      </ul>
+
+        <ul class="navigation__bar">
+            <li class="navigation__bar_links"><a href="home.html">Home</a></li>
+            <li class="navigation__bar_links"><a href="about.html">About</a></li>
+            <li class="navigation__bar_links">
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+
+        <form action="/search" method="GET">
+            <input type="text" name="q" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+
     </div>
   </header>
 <body>
