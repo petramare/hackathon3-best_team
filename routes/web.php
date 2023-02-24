@@ -19,3 +19,5 @@ use App\Http\Controllers\OwnerController;
 Route::get('/', [ClinicController::class, 'list'])->name('homepage.list');
 
 Route::get('/search', [ClinicController::class, 'search'])->name('search');
+
+Route::get('/{ownerId}/showOwner', [OwnerController::class, 'showOwner'])->name('owner.showOwner');
