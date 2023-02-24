@@ -5,18 +5,27 @@
     <button type="submit">Search</button>
 </form>
 
-@if ($results->count() > 0)
+@if ($resultAnimals->count() > 0)
+    <h3>Animals:</h3>
     <ul>
-        Animals:
-        @foreach ($results as $result)
-            <li>{{ $result->name}}</li>
+        @foreach ($resultAnimals as $animal)
+            <li>{{ $animal->name }}  <br> owner: {{ $animal->owner->first_name }} {{ $animal->owner->surname }}</li>
         @endforeach
     </ul>
+    <br>
 
+    <h3>Owners:</h3>
     <ul>
-        Owners:
-        @foreach ($results as $result)
-            <li>{{ $result->surname }}</li>
+        @foreach ($resultOwners as $owner)
+            <li> <strong>{{ $owner->surname }}</strong> {{ $owner->first_name }} 
+                <ul>
+                    @foreach ($owner->animals as $animal)
+                        <li>
+                            {{ $animal->name }}
+                        </li>
+                    @endforeach
+                </ul>
+            </li>
         @endforeach
     </ul>
 @else
