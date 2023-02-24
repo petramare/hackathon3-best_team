@@ -5,24 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>St. Hector's Veterinary Clinic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <header>
     <!--NAV BAR-->
-    <div class="navigation">
+    <nav class="navbar navbar-expand-sm bg-body-secondary px-3">
+        
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Contact</a>
+              </li>
+            </ul>
+          </div>
 
-        <ul class="navigation__bar">
-            <li class="navigation__bar_links"><a href="/">Home</a></li>
-            <li class="navigation__bar_links"><a href="about.html">About</a></li>
-            <li class="navigation__bar_links">
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
-
-        <form action="/search" method="GET">
-            <input type="text" name="q" placeholder="Search...">
-            <button type="submit">Search</button>
+          <form class="d-flex w-50" role="search" action="/search" method="GET">
+            <input class="form-control me-3" type="search" name="q" placeholder="Search..." aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
 
-    </div>
+    </nav>
   </header>
 <body>
