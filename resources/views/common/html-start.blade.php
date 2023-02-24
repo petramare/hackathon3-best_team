@@ -12,9 +12,7 @@
       <ul class="navigation__bar">
         <li class="navigation__bar_links"><a href="home.html">Home</a></li>
         <li class="navigation__bar_links"><a href="about.html">About</a></li>
-        <li class="navigation__bar_links">
-          <a href="contact.html">Contact</a>
-        </li>
+        <li class="navigation__bar_links"><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </header>
