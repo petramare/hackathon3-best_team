@@ -1,11 +1,5 @@
 @include('common.html-start')
 
-<form action="/search" method="GET">
-    <input type="text" name="q" placeholder="Search...">
-    <button type="submit">Search</button>
-</form>
-
-
     <h3>Animals:</h3>
     @if (count($resultAnimals)>0)
     <ul>
@@ -35,6 +29,5 @@
     </ul>
     @else <p>No owners found</p>
     @endif
-
 
 @include('common.html-end')
